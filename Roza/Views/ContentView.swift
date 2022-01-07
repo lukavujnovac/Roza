@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         CustomTabBarContainerView(selection: $tabSelection) { 
-            Color.indigo
+            ActivityListView()
                 .tabBarItem(tab: .home, selection: $tabSelection)
             
             Color.pink

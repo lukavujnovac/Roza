@@ -14,6 +14,12 @@
 		5F7F4A08276E7CC10033ED1A /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A07276E7CC10033ED1A /* CustomTabBarContainerView.swift */; };
 		5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A09276E7F130033ED1A /* CustomTabBarView.swift */; };
 		5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A0B276E80940033ED1A /* TabBarItemsPreferenceKeys.swift */; };
+		5FECB5262788DB6800C16269 /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB5252788DB6800C16269 /* ActivityListView.swift */; };
+		5FECB5292788E8C800C16269 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB5282788E8C800C16269 /* ActivityModel.swift */; };
+		5FECB52B2788ECE900C16269 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB52A2788ECE900C16269 /* MockData.swift */; };
+		5FECB52E2788F60100C16269 /* ColorThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB52D2788F60100C16269 /* ColorThemeProtocol.swift */; };
+		5FECB5302788F61200C16269 /* PinkColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB52F2788F61200C16269 /* PinkColorTheme.swift */; };
+		5FECB5352788F67100C16269 /* ActivityListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB5342788F67100C16269 /* ActivityListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		5F7F4A07276E7CC10033ED1A /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		5F7F4A09276E7F130033ED1A /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		5F7F4A0B276E80940033ED1A /* TabBarItemsPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKeys.swift; sourceTree = "<group>"; };
+		5FECB5252788DB6800C16269 /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
+		5FECB5282788E8C800C16269 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		5FECB52A2788ECE900C16269 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		5FECB52D2788F60100C16269 /* ColorThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeProtocol.swift; sourceTree = "<group>"; };
+		5FECB52F2788F61200C16269 /* PinkColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkColorTheme.swift; sourceTree = "<group>"; };
+		5FECB5342788F67100C16269 /* ActivityListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				5F7F49F8276E7BF50033ED1A /* RozaApp.swift */,
-				5F7F49FA276E7BF50033ED1A /* ContentView.swift */,
+				5FECB5312788F62D00C16269 /* Views */,
+				5FECB52C2788F5F300C16269 /* ColorThemes */,
+				5FECB5272788E89F00C16269 /* Models */,
 				5F7F4A06276E7CA20033ED1A /* CustomTabBar */,
 				5F7F49FC276E7BFD0033ED1A /* Assets.xcassets */,
 				5F7F49FE276E7BFD0033ED1A /* Preview Content */,
@@ -82,6 +96,34 @@
 				5F7F4A0B276E80940033ED1A /* TabBarItemsPreferenceKeys.swift */,
 			);
 			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		5FECB5272788E89F00C16269 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FECB5282788E8C800C16269 /* ActivityModel.swift */,
+				5FECB52A2788ECE900C16269 /* MockData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FECB52C2788F5F300C16269 /* ColorThemes */ = {
+			isa = PBXGroup;
+			children = (
+				5FECB52D2788F60100C16269 /* ColorThemeProtocol.swift */,
+				5FECB52F2788F61200C16269 /* PinkColorTheme.swift */,
+			);
+			path = ColorThemes;
+			sourceTree = "<group>";
+		};
+		5FECB5312788F62D00C16269 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F7F49FA276E7BF50033ED1A /* ContentView.swift */,
+				5FECB5252788DB6800C16269 /* ActivityListView.swift */,
+				5FECB5342788F67100C16269 /* ActivityListItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FECB52E2788F60100C16269 /* ColorThemeProtocol.swift in Sources */,
 				5F7F49FB276E7BF50033ED1A /* ContentView.swift in Sources */,
 				5F7F4A08276E7CC10033ED1A /* CustomTabBarContainerView.swift in Sources */,
 				5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */,
 				5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */,
 				5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */,
+				5FECB52B2788ECE900C16269 /* MockData.swift in Sources */,
+				5FECB5302788F61200C16269 /* PinkColorTheme.swift in Sources */,
+				5FECB5352788F67100C16269 /* ActivityListItemView.swift in Sources */,
+				5FECB5292788E8C800C16269 /* ActivityModel.swift in Sources */,
+				5FECB5262788DB6800C16269 /* ActivityListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
