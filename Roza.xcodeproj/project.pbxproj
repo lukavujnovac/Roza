@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F191515278A2941000AB93D /* GoalContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F191513278A2941000AB93D /* GoalContainer.xcdatamodeld */; };
 		5F48AB832788FEBB0003024D /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48AB822788FEBB0003024D /* GoalsView.swift */; };
 		5F48AB85278901C70003024D /* YellowColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48AB84278901C70003024D /* YellowColorTheme.swift */; };
 		5F6475732789C21600176B03 /* GoalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6475722789C21500176B03 /* GoalListView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F191514278A2941000AB93D /* GoalContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalContainer.xcdatamodel; sourceTree = "<group>"; };
 		5F48AB822788FEBB0003024D /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		5F48AB84278901C70003024D /* YellowColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowColorTheme.swift; sourceTree = "<group>"; };
 		5F6475722789C21500176B03 /* GoalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		5FECB5272788E89F00C16269 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5F191513278A2941000AB93D /* GoalContainer.xcdatamodeld */,
 				5FECB5282788E8C800C16269 /* ActivityModel.swift */,
 				5F9638162789F8CB006CA401 /* Goal.swift */,
 			);
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FECB52E2788F60100C16269 /* ColorThemeProtocol.swift in Sources */,
+				5F191515278A2941000AB93D /* GoalContainer.xcdatamodeld in Sources */,
 				5F7F49FB276E7BF50033ED1A /* ContentView.swift in Sources */,
 				5F48AB832788FEBB0003024D /* GoalsView.swift in Sources */,
 				5F7F4A08276E7CC10033ED1A /* CustomTabBarContainerView.swift in Sources */,
@@ -453,6 +457,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F191513278A2941000AB93D /* GoalContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F191514278A2941000AB93D /* GoalContainer.xcdatamodel */,
+			);
+			currentVersion = 5F191514278A2941000AB93D /* GoalContainer.xcdatamodel */;
+			path = GoalContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5F7F49ED276E7BF40033ED1A /* Project object */;
 }

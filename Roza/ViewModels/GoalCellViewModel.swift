@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 class GoalCellViewModel: ObservableObject, Identifiable {
-    @Published var goal: Goal
+    @Published var goal: GoalEntity
     var id = ""
     
     @Published var completitionStateIconName: String = ""
     private var cancellabels = Set<AnyCancellable>()
     
-    init(goal: Goal) {
+    init(goal: GoalEntity) {
         self.goal = goal
         
         $goal.map { goal in

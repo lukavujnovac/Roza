@@ -10,11 +10,12 @@ import Combine
 
 struct GoalListView: View {
     
-    @StateObject var vm = ActivityListViewModel()
+    @StateObject var vm = GoalListViewModel()
     
     let colorTheme: ColorThemeProtocol = YellowColorTheme()
     @State private var tapped: Bool = false
     @State private var showingSheet = false
+    @State private var goalName: String = ""
     
     var body: some View {
         
@@ -24,36 +25,52 @@ struct GoalListView: View {
                 .foregroundColor(colorTheme.background)
             
             VStack(spacing: 40){
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 200, height: 60)
-                    .foregroundColor(colorTheme.primary)
-                    .shadow(color: colorTheme.secondary, radius: 5, x: 0, y: 6)
-                    .overlay(
-                        HStack{
-                            Image(systemName: "plus.square")
-                                .foregroundColor(colorTheme.secondary)
-                            Text("add")
-                                .fontWeight(.bold)
-                                .foregroundColor(colorTheme.secondary)
-                        }
-                    )
-                    .onTapGesture {
-                        showingSheet.toggle()
-                    }
-                
-                ScrollView{
-                    VStack(spacing: 15) {
-                        ForEach(vm.dataService.goals, id: \.self) { goal in
-                                GoalCellView(goalCellViewModel: GoalCellViewModel(goal: goal))
-                                .frame(height: 80)
-                        }
+                VStack {
+                    
+                    TextField("Add goals here...", text: $goalName)
+                        .font(.headline)
+                        .padding(.leading)
+                        .frame(height: 55)
+                        .background(Color("backgroundColor"))
+                        .cornerRadius(10)
                         .padding(.horizontal, 30)
+                    
+                    Button { 
+                        guard !goalName.isEmpty else {return}
+                        vm.addGoals(text: goalName)
+                        goalName = ""
+                        hideKeyboard()
+                    } label: { 
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 200, height: 60)
+                            .foregroundColor(colorTheme.primary)
+                            .shadow(color: colorTheme.secondary, radius: 5, x: 0, y: 6)
+                            .overlay(
+                                HStack{
+                                    Image(systemName: "plus.square")
+                                        .foregroundColor(colorTheme.secondary)
+                                    Text("add")
+                                        .fontWeight(.bold)
+                                        .foregroundColor(colorTheme.secondary)
+                                }
+                            )
                     }
                 }
+                
+                List {
+                    ForEach(vm.savedEntities) { goal in
+                        GoalCellView(vm: GoalCellViewModel(goal: goal))
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                            .frame(height: 80)
+                            .onTapGesture {
+                                vm.updateGoal(entity: goal)
+                            }
+                    }
+                    .onDelete(perform: vm.deleteGoals)
+                    .padding(.horizontal, 30)
+                }.listStyle(PlainListStyle())
                 Spacer()
-            }
-            .sheet(isPresented: $showingSheet) { 
-                AddGoalSheet()
             }
         }
     }

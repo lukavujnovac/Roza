@@ -11,7 +11,7 @@ import SwiftUI
 struct RozaApp: App {
     var body: some Scene {
         WindowGroup {
-            GoalListView()
+            ContentView()
         }
     }
 }
