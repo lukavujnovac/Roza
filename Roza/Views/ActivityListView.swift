@@ -34,7 +34,7 @@ struct ActivityListView: View {
                     foregroundColor: colorTheme.primary,
                     imageName: "plus.circle",
                     imageColor: colorTheme.tertiary,
-                    tappedImageColor: .black,
+                    tappedImageColor: colorTheme.yellow,
                     tappedImageName: "plus.circle.fill",
                     text: "Custom", systemName: true)
                 
@@ -51,7 +51,7 @@ struct ActivityListView: View {
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
-                                    imageColor: .white, 
+                                    imageColor: colorTheme.yellow, 
                                     tappedImageColor: .purple,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: false)
@@ -63,7 +63,7 @@ struct ActivityListView: View {
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
-                                    imageColor: .white, 
+                                    imageColor: colorTheme.yellow, 
                                     tappedImageColor: .blue,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: false)
@@ -85,7 +85,7 @@ struct ActivityListView: View {
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
-                                    imageColor: .white, 
+                                    imageColor: colorTheme.yellow, 
                                     tappedImageColor: colorTheme.secondary,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: true)
@@ -97,7 +97,7 @@ struct ActivityListView: View {
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
-                                    imageColor: .white, 
+                                    imageColor: colorTheme.yellow, 
                                     tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: true)

@@ -13,4 +13,7 @@ struct PinkColorTheme: ColorThemeProtocol {
     var primary: Color = Color("primaryColor")
     var secondary: Color = Color("secondaryColor")
     var tertiary: Color = Color("tertiaryColor")
+    var yellow: Color = Color("yellow")
 }
+
+

@@ -34,7 +34,7 @@ struct CustomTabBarContainerView<Content: View>: View {
 
 struct CustomTabBarContainerView_Previews: PreviewProvider {
     
-    static let tabs: [TabBarItem] = [.home, .favourites, .profile]
+    static let tabs: [TabBarItem] = [.home, .goals, .profile]
     
     static var previews: some View {
         CustomTabBarContainerView(selection: .constant(tabs.first!)) { 
@@ -44,12 +44,12 @@ struct CustomTabBarContainerView_Previews: PreviewProvider {
 }
 
 enum TabBarItem: Hashable {
-    case home, favourites, profile
+    case home, goals, profile
     
     var iconName: String {
         switch self {
             case .home: return "house"
-            case .favourites: return "heart"
+            case .goals: return "crown"
             case .profile: return "person"
         }
     }
@@ -57,7 +57,7 @@ enum TabBarItem: Hashable {
     var title: String {
         switch self {
             case .home: return "home"
-            case .favourites: return "favourites"
+            case .goals: return "goals"
             case .profile: return "profile"
         }
     }
@@ -65,7 +65,7 @@ enum TabBarItem: Hashable {
     var color: Color {
         switch self {
             case .home: return .pink
-            case .favourites: return .pink
+            case .goals: return .yellow
             case .profile: return .blue
         }
     }

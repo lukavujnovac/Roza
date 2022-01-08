@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F48AB832788FEBB0003024D /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48AB822788FEBB0003024D /* GoalsView.swift */; };
+		5F48AB85278901C70003024D /* YellowColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48AB84278901C70003024D /* YellowColorTheme.swift */; };
 		5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49F8276E7BF50033ED1A /* RozaApp.swift */; };
 		5F7F49FB276E7BF50033ED1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49FA276E7BF50033ED1A /* ContentView.swift */; };
 		5F7F49FD276E7BFD0033ED1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F49FC276E7BFD0033ED1A /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F48AB822788FEBB0003024D /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
+		5F48AB84278901C70003024D /* YellowColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowColorTheme.swift; sourceTree = "<group>"; };
 		5F7F49F5276E7BF50033ED1A /* Roza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F49F8276E7BF50033ED1A /* RozaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozaApp.swift; sourceTree = "<group>"; };
 		5F7F49FA276E7BF50033ED1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			children = (
 				5FECB52D2788F60100C16269 /* ColorThemeProtocol.swift */,
 				5FECB52F2788F61200C16269 /* PinkColorTheme.swift */,
+				5F48AB84278901C70003024D /* YellowColorTheme.swift */,
 			);
 			path = ColorThemes;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				5F7F49FA276E7BF50033ED1A /* ContentView.swift */,
 				5FECB5252788DB6800C16269 /* ActivityListView.swift */,
 				5FECB5342788F67100C16269 /* ActivityListItemView.swift */,
+				5F48AB822788FEBB0003024D /* GoalsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 			files = (
 				5FECB52E2788F60100C16269 /* ColorThemeProtocol.swift in Sources */,
 				5F7F49FB276E7BF50033ED1A /* ContentView.swift in Sources */,
+				5F48AB832788FEBB0003024D /* GoalsView.swift in Sources */,
 				5F7F4A08276E7CC10033ED1A /* CustomTabBarContainerView.swift in Sources */,
 				5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */,
 				5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */,
@@ -206,6 +213,7 @@
 				5FECB5302788F61200C16269 /* PinkColorTheme.swift in Sources */,
 				5FECB5352788F67100C16269 /* ActivityListItemView.swift in Sources */,
 				5FECB5292788E8C800C16269 /* ActivityModel.swift in Sources */,
+				5F48AB85278901C70003024D /* YellowColorTheme.swift in Sources */,
 				5FECB5262788DB6800C16269 /* ActivityListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

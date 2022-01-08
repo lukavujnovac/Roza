@@ -13,15 +13,18 @@ struct ContentView: View {
     @State private var tabSelection: TabBarItem = .home
     
     var body: some View {
-        CustomTabBarContainerView(selection: $tabSelection) { 
-            ActivityListView()
-                .tabBarItem(tab: .home, selection: $tabSelection)
-            
-            Color.pink
-                .tabBarItem(tab: .favourites, selection: $tabSelection)
-            
-            Color.blue
-                .tabBarItem(tab: .profile, selection: $tabSelection)
+        
+        NavigationView{
+            CustomTabBarContainerView(selection: $tabSelection) { 
+                ActivityListView()
+                    .tabBarItem(tab: .home, selection: $tabSelection)
+                
+                GoalsView()
+                    .tabBarItem(tab: .goals, selection: $tabSelection)
+                
+                Color.blue
+                    .tabBarItem(tab: .profile, selection: $tabSelection)
+            }
         }
     }
 }

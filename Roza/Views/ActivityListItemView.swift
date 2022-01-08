@@ -12,7 +12,7 @@ struct ActivityListItemView: View {
     let colorTheme = PinkColorTheme()
     let foregroundColor: Color
     let imageName: String
-    let imageColor: Color
+    let imageColor: Color 
     let tappedImageColor: Color
     let tappedImageName: String
     let text: String
