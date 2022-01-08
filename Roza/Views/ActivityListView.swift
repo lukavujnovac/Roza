@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct ActivityListView: View {
+class ActivityListViewModel: ObservableObject {
     
-    let colorTheme: PinkColorTheme = PinkColorTheme()
     let dataService = MockData()
     
-    let columns = [
-        GridItem(.fixed(100)),
-        GridItem(.flexible()),
-    ]
+}
+
+struct ActivityListView: View {
+    
+    @StateObject var vm = ActivityListViewModel()
+    let colorTheme: PinkColorTheme = PinkColorTheme()
     
     var body: some View {
         ZStack{
@@ -47,24 +48,24 @@ struct ActivityListView: View {
                     
                     HStack(spacing: 10) {
                         VStack(spacing: 10){
-                            ForEach(dataService.fitnessActivities1, id: \.self) {activity in 
+                            ForEach(vm.dataService.fitnessActivities1, id: \.self) {activity in 
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
                                     imageColor: colorTheme.yellow, 
-                                    tappedImageColor: .purple,
+                                    tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: false)
                             }
                         }
                         
                         VStack(spacing: 10){
-                            ForEach(dataService.fitnessActivities2, id: \.self) {activity in 
+                            ForEach(vm.dataService.fitnessActivities2, id: \.self) {activity in 
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
                                     imageColor: colorTheme.yellow, 
-                                    tappedImageColor: .blue,
+                                    tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: false)
                             }
@@ -81,19 +82,19 @@ struct ActivityListView: View {
                     
                     HStack(spacing: 10) {
                         VStack(spacing: 10){
-                            ForEach(dataService.learnActivites1, id: \.self) {activity in 
+                            ForEach(vm.dataService.learnActivites1, id: \.self) {activity in 
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
                                     imageColor: colorTheme.yellow, 
-                                    tappedImageColor: colorTheme.secondary,
+                                    tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: true)
                             }
                         }
                         
                         VStack(spacing: 10){
-                            ForEach(dataService.learnActivites2, id: \.self) {activity in 
+                            ForEach(vm.dataService.learnActivites2, id: \.self) {activity in 
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,

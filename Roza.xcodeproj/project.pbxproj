@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F48AB832788FEBB0003024D /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48AB822788FEBB0003024D /* GoalsView.swift */; };
 		5F48AB85278901C70003024D /* YellowColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48AB84278901C70003024D /* YellowColorTheme.swift */; };
+		5F6475732789C21600176B03 /* GoalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6475722789C21500176B03 /* GoalListView.swift */; };
 		5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49F8276E7BF50033ED1A /* RozaApp.swift */; };
 		5F7F49FB276E7BF50033ED1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49FA276E7BF50033ED1A /* ContentView.swift */; };
 		5F7F49FD276E7BFD0033ED1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F49FC276E7BFD0033ED1A /* Assets.xcassets */; };
@@ -16,6 +17,10 @@
 		5F7F4A08276E7CC10033ED1A /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A07276E7CC10033ED1A /* CustomTabBarContainerView.swift */; };
 		5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A09276E7F130033ED1A /* CustomTabBarView.swift */; };
 		5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A0B276E80940033ED1A /* TabBarItemsPreferenceKeys.swift */; };
+		5F9638132789F812006CA401 /* GoalCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9638122789F812006CA401 /* GoalCellViewModel.swift */; };
+		5F9638152789F88B006CA401 /* GoalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9638142789F88B006CA401 /* GoalCellView.swift */; };
+		5F9638172789F8CB006CA401 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9638162789F8CB006CA401 /* Goal.swift */; };
+		5F96381B2789F94D006CA401 /* GoalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96381A2789F94D006CA401 /* GoalListViewModel.swift */; };
 		5FECB5262788DB6800C16269 /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB5252788DB6800C16269 /* ActivityListView.swift */; };
 		5FECB5292788E8C800C16269 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB5282788E8C800C16269 /* ActivityModel.swift */; };
 		5FECB52B2788ECE900C16269 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB52A2788ECE900C16269 /* MockData.swift */; };
@@ -27,6 +32,7 @@
 /* Begin PBXFileReference section */
 		5F48AB822788FEBB0003024D /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		5F48AB84278901C70003024D /* YellowColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowColorTheme.swift; sourceTree = "<group>"; };
+		5F6475722789C21500176B03 /* GoalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListView.swift; sourceTree = "<group>"; };
 		5F7F49F5276E7BF50033ED1A /* Roza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F49F8276E7BF50033ED1A /* RozaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozaApp.swift; sourceTree = "<group>"; };
 		5F7F49FA276E7BF50033ED1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +41,10 @@
 		5F7F4A07276E7CC10033ED1A /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		5F7F4A09276E7F130033ED1A /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		5F7F4A0B276E80940033ED1A /* TabBarItemsPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKeys.swift; sourceTree = "<group>"; };
+		5F9638122789F812006CA401 /* GoalCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellViewModel.swift; sourceTree = "<group>"; };
+		5F9638142789F88B006CA401 /* GoalCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellView.swift; sourceTree = "<group>"; };
+		5F9638162789F8CB006CA401 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		5F96381A2789F94D006CA401 /* GoalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewModel.swift; sourceTree = "<group>"; };
 		5FECB5252788DB6800C16269 /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
 		5FECB5282788E8C800C16269 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		5FECB52A2788ECE900C16269 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -74,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				5F7F49F8276E7BF50033ED1A /* RozaApp.swift */,
+				5F7F49FA276E7BF50033ED1A /* ContentView.swift */,
+				5F9638192789F92C006CA401 /* DataServices */,
+				5F9638182789F922006CA401 /* ViewModels */,
 				5FECB5312788F62D00C16269 /* Views */,
 				5FECB52C2788F5F300C16269 /* ColorThemes */,
 				5FECB5272788E89F00C16269 /* Models */,
@@ -102,11 +115,28 @@
 			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
+		5F9638182789F922006CA401 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5F9638122789F812006CA401 /* GoalCellViewModel.swift */,
+				5F96381A2789F94D006CA401 /* GoalListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5F9638192789F92C006CA401 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				5FECB52A2788ECE900C16269 /* MockData.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
 		5FECB5272788E89F00C16269 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5FECB5282788E8C800C16269 /* ActivityModel.swift */,
-				5FECB52A2788ECE900C16269 /* MockData.swift */,
+				5F9638162789F8CB006CA401 /* Goal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,10 +154,11 @@
 		5FECB5312788F62D00C16269 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5F7F49FA276E7BF50033ED1A /* ContentView.swift */,
 				5FECB5252788DB6800C16269 /* ActivityListView.swift */,
 				5FECB5342788F67100C16269 /* ActivityListItemView.swift */,
 				5F48AB822788FEBB0003024D /* GoalsView.swift */,
+				5F6475722789C21500176B03 /* GoalListView.swift */,
+				5F9638142789F88B006CA401 /* GoalCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,10 +238,15 @@
 				5F48AB832788FEBB0003024D /* GoalsView.swift in Sources */,
 				5F7F4A08276E7CC10033ED1A /* CustomTabBarContainerView.swift in Sources */,
 				5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */,
+				5F9638132789F812006CA401 /* GoalCellViewModel.swift in Sources */,
 				5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */,
+				5F6475732789C21600176B03 /* GoalListView.swift in Sources */,
 				5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */,
 				5FECB52B2788ECE900C16269 /* MockData.swift in Sources */,
+				5F9638172789F8CB006CA401 /* Goal.swift in Sources */,
 				5FECB5302788F61200C16269 /* PinkColorTheme.swift in Sources */,
+				5F9638152789F88B006CA401 /* GoalCellView.swift in Sources */,
+				5F96381B2789F94D006CA401 /* GoalListViewModel.swift in Sources */,
 				5FECB5352788F67100C16269 /* ActivityListItemView.swift in Sources */,
 				5FECB5292788E8C800C16269 /* ActivityModel.swift in Sources */,
 				5F48AB85278901C70003024D /* YellowColorTheme.swift in Sources */,

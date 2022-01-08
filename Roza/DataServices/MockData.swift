@@ -15,7 +15,7 @@ class MockData {
     
     var fitnessActivities2: [ActivityModel] = [
         ActivityModel(imageName: "gym", name: "Gym", tappedImageName: "gym.fill"),
-        ActivityModel(imageName: "yoga", name: "Yoga", tappedImageName: "yoga.fill")
+        ActivityModel(imageName: "volleyball", name: "Volleyball", tappedImageName: "volleyball.fill")
     ]
     
     var learnActivites1: [ActivityModel] = [
@@ -26,5 +26,19 @@ class MockData {
     var learnActivites2: [ActivityModel] = [
         ActivityModel(imageName: "bolt", name: "Skill", tappedImageName: "bolt.fill"),
         ActivityModel(imageName: "book", name: "Read", tappedImageName: "book.fill")
+    ]
+    
+    var goals: [Goal] = [
+        Goal(name: "prvi cilj"),
+        Goal(name: "drugi cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj"),
+        Goal(name: "treci cilj")
     ]
 }

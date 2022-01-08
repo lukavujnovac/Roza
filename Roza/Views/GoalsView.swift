@@ -32,7 +32,7 @@ struct GoalsView: View {
                     }
                     
                     NavigationLink { 
-                        Text("navigate")
+                        GoalListView()
                     } label: { 
                         allGoalsButton
                     }
@@ -70,7 +70,7 @@ struct GoalsView: View {
     }
 }
 
-struct ActivityDetailView_Previews: PreviewProvider {
+struct GoalsView_Previews: PreviewProvider {
     static var previews: some View {
         GoalsView()
     }
@@ -79,12 +79,13 @@ struct ActivityDetailView_Previews: PreviewProvider {
 extension GoalsView {
     private var allGoalsButton: some View {
         RoundedRectangle(cornerRadius: 20)
-            .frame(maxWidth: .infinity, maxHeight: 80)
-            .padding(.horizontal, 100)
+            .frame(maxWidth: 220 ,maxHeight: 80)
+            .padding()
             .foregroundColor(colorTheme.secondary)
             .shadow(color: colorTheme.secondary.opacity(0.7), radius: 10, x: 2, y: 20)
             .overlay(
                 Text("All Goals")
+                    .foregroundColor(.black)
                     .font(.system(size: 17, weight: .light, design: .rounded))
                 
             )

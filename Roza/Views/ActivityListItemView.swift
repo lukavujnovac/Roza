@@ -23,7 +23,7 @@ struct ActivityListItemView: View {
         RoundedRectangle(cornerRadius: 10)
             .frame(maxWidth: .infinity, maxHeight: 80)
             .foregroundColor(tapped ? .pink : foregroundColor)
-            .shadow(color: foregroundColor.opacity(0.6), radius: 5, x: 0, y: 10)
+            .shadow(color: .yellow.opacity(0.5), radius: 5, x: 0, y: 6)
             .overlay(
                 HStack{ 
                     if systemName {
@@ -34,7 +34,7 @@ struct ActivityListItemView: View {
                             .frame(width: 25, height: 25)
                             .foregroundColor(tapped ? tappedImageColor : imageColor)
                     }else {
-                        Image(imageName)
+                        Image(tapped ? tappedImageName : imageName)
                             .renderingMode(.template)
                             .resizable()
                             .scaledToFit()
