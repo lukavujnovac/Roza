@@ -13,6 +13,7 @@
 		5F6475732789C21600176B03 /* GoalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6475722789C21500176B03 /* GoalListView.swift */; };
 		5F6732A8278B7C490064A855 /* BlueColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6732A7278B7C490064A855 /* BlueColorTheme.swift */; };
 		5F6732AA278B7D9F0064A855 /* SecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6732A9278B7D9F0064A855 /* SecretView.swift */; };
+		5F6732AE278B882B0064A855 /* SecretViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6732AD278B882B0064A855 /* SecretViewModel.swift */; };
 		5F7A6B9E278B7586009D2DE8 /* ActivityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A6B9D278B7586009D2DE8 /* ActivityListViewModel.swift */; };
 		5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49F8276E7BF50033ED1A /* RozaApp.swift */; };
 		5F7F49FB276E7BF50033ED1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49FA276E7BF50033ED1A /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 		5F6475722789C21500176B03 /* GoalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListView.swift; sourceTree = "<group>"; };
 		5F6732A7278B7C490064A855 /* BlueColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueColorTheme.swift; sourceTree = "<group>"; };
 		5F6732A9278B7D9F0064A855 /* SecretView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretView.swift; sourceTree = "<group>"; };
+		5F6732AD278B882B0064A855 /* SecretViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretViewModel.swift; sourceTree = "<group>"; };
 		5F7A6B9D278B7586009D2DE8 /* ActivityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewModel.swift; sourceTree = "<group>"; };
 		5F7F49F5276E7BF50033ED1A /* Roza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F49F8276E7BF50033ED1A /* RozaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozaApp.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				5F9638122789F812006CA401 /* GoalCellViewModel.swift */,
 				5F96381A2789F94D006CA401 /* GoalListViewModel.swift */,
 				5F7A6B9D278B7586009D2DE8 /* ActivityListViewModel.swift */,
+				5F6732AD278B882B0064A855 /* SecretViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				5F7F4A08276E7CC10033ED1A /* CustomTabBarContainerView.swift in Sources */,
 				5F6732AA278B7D9F0064A855 /* SecretView.swift in Sources */,
 				5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */,
+				5F6732AE278B882B0064A855 /* SecretViewModel.swift in Sources */,
 				5F9638132789F812006CA401 /* GoalCellViewModel.swift in Sources */,
 				5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */,
 				5F6732A8278B7C490064A855 /* BlueColorTheme.swift in Sources */,

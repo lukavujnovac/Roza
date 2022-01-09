@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-class SecretViewModel: ObservableObject {
-    var password: String = "1234"
-    @Published var passwordCorrect: Bool = false
-    @Published var isComplete: Bool = false
-    @Published var isSuccess: Bool = false
-    @Published var showingAlert: Bool = false
-    @Published var passwordText: String = ""
-}
-
 struct SecretView: View {
     @StateObject var vm = SecretViewModel()
     let colorTheme: ColorThemeProtocol = BlueColorTheme()
