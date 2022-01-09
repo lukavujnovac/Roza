@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-class ActivityListViewModel: ObservableObject {
-    
-    let dataService = MockData()
-    
-}
-
 struct ActivityListView: View {
     
     @StateObject var vm = ActivityListViewModel()
@@ -82,7 +76,7 @@ struct ActivityListView: View {
                     
                     HStack(spacing: 10) {
                         VStack(spacing: 10){
-                            ForEach(vm.dataService.learnActivites1, id: \.self) {activity in 
+                            ForEach(vm.dataService.learnActivities1, id: \.self) {activity in 
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,
@@ -94,7 +88,7 @@ struct ActivityListView: View {
                         }
                         
                         VStack(spacing: 10){
-                            ForEach(vm.dataService.learnActivites2, id: \.self) {activity in 
+                            ForEach(vm.dataService.learnActivities2, id: \.self) {activity in 
                                 ActivityListItemView(
                                     foregroundColor: colorTheme.secondary,
                                     imageName: activity.imageName,

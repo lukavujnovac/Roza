@@ -67,7 +67,7 @@ extension GoalListView {
         TextField("Add goals here...", text: $goalName)
             .font(.headline)
             .padding(.leading)
-            .frame(height: 55)
+            .frame(height: 55)	
             .background(Color("backgroundColor"))
             .cornerRadius(10)
             .padding(.horizontal, 30)
