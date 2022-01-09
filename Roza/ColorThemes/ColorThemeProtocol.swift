@@ -14,3 +14,5 @@ protocol ColorThemeProtocol {
     var secondary: Color { get }
     var tertiary: Color { get }
 }
+
+

@@ -22,7 +22,7 @@ struct ContentView: View {
                 GoalsView()
                     .tabBarItem(tab: .goals, selection: $tabSelection)
                 
-                Color.blue
+                SecretView()
                     .tabBarItem(tab: .profile, selection: $tabSelection)
             }
         }
