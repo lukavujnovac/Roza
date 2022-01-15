@@ -33,7 +33,7 @@ struct GoalListView: View {
     }
 }
 
-struct ActivityDetailView_Previews: PreviewProvider {
+struct GoalListView_Previews: PreviewProvider {
     static var previews: some View {
         GoalListView()
     }

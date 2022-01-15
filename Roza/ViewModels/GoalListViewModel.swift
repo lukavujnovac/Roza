@@ -10,7 +10,7 @@ import CoreData
 import SwiftUI
 
 class GoalListViewModel: ObservableObject {
-    @Published var dataService: DataServiceProtocol = MockData()
+    @Published var dataService: DataServiceProtocol   = MockData()
     
     let container: NSPersistentContainer
     @Published var savedEntities: [GoalEntity] = []
