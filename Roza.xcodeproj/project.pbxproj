@@ -12,7 +12,6 @@
 		5F48AB85278901C70003024D /* YellowColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F48AB84278901C70003024D /* YellowColorTheme.swift */; };
 		5F4CDA962793416A00BF9952 /* ActivityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4CDA952793416A00BF9952 /* ActivityDetailViewModel.swift */; };
 		5F58855F279331CF0086FE1D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F58855E279331CF0086FE1D /* ProfileView.swift */; };
-		5F58856127933AE60086FE1D /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F58856027933AE60086FE1D /* ActivityDetailView.swift */; };
 		5F58856427933C100086FE1D /* ActivityContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F58856227933C100086FE1D /* ActivityContainer.xcdatamodeld */; };
 		5F6475732789C21600176B03 /* GoalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6475722789C21500176B03 /* GoalListView.swift */; };
 		5F6732A8278B7C490064A855 /* BlueColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6732A7278B7C490064A855 /* BlueColorTheme.swift */; };
@@ -35,6 +34,7 @@
 		5FECB52E2788F60100C16269 /* ColorThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB52D2788F60100C16269 /* ColorThemeProtocol.swift */; };
 		5FECB5302788F61200C16269 /* PinkColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB52F2788F61200C16269 /* PinkColorTheme.swift */; };
 		5FECB5352788F67100C16269 /* ActivityListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB5342788F67100C16269 /* ActivityListItemView.swift */; };
+		5FF1D5922799D0E400559EC0 /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF1D5912799D0E400559EC0 /* ActivityDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,6 @@
 		5F48AB84278901C70003024D /* YellowColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowColorTheme.swift; sourceTree = "<group>"; };
 		5F4CDA952793416A00BF9952 /* ActivityDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewModel.swift; sourceTree = "<group>"; };
 		5F58855E279331CF0086FE1D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		5F58856027933AE60086FE1D /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
 		5F58856327933C100086FE1D /* ActivityContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivityContainer.xcdatamodel; sourceTree = "<group>"; };
 		5F6475722789C21500176B03 /* GoalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListView.swift; sourceTree = "<group>"; };
 		5F6732A7278B7C490064A855 /* BlueColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueColorTheme.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		5FECB52D2788F60100C16269 /* ColorThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeProtocol.swift; sourceTree = "<group>"; };
 		5FECB52F2788F61200C16269 /* PinkColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkColorTheme.swift; sourceTree = "<group>"; };
 		5FECB5342788F67100C16269 /* ActivityListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListItemView.swift; sourceTree = "<group>"; };
+		5FF1D5912799D0E400559EC0 /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				5FECB5252788DB6800C16269 /* ActivityListView.swift */,
-				5F58856027933AE60086FE1D /* ActivityDetailView.swift */,
+				5FF1D5912799D0E400559EC0 /* ActivityDetailView.swift */,
 				5FECB5342788F67100C16269 /* ActivityListItemView.swift */,
 				5F48AB822788FEBB0003024D /* GoalsView.swift */,
 				5F6475722789C21500176B03 /* GoalListView.swift */,
@@ -277,11 +277,11 @@
 				5F6732AE278B882B0064A855 /* SecretViewModel.swift in Sources */,
 				5F9638132789F812006CA401 /* GoalCellViewModel.swift in Sources */,
 				5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */,
+				5FF1D5922799D0E400559EC0 /* ActivityDetailView.swift in Sources */,
 				5F58856427933C100086FE1D /* ActivityContainer.xcdatamodeld in Sources */,
 				5F6732A8278B7C490064A855 /* BlueColorTheme.swift in Sources */,
 				5F6475732789C21600176B03 /* GoalListView.swift in Sources */,
 				5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */,
-				5F58856127933AE60086FE1D /* ActivityDetailView.swift in Sources */,
 				5FECB52B2788ECE900C16269 /* MockData.swift in Sources */,
 				5FECB5302788F61200C16269 /* PinkColorTheme.swift in Sources */,
 				5F9638152789F88B006CA401 /* GoalCellView.swift in Sources */,

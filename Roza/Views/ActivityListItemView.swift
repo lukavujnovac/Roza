@@ -46,17 +46,17 @@ struct ActivityListItemView: View {
                         .font(.system(size: 16, weight: .light, design: .rounded))
                 }
             )
-            .onTapGesture {
-                withAnimation(.easeInOut) {
-                    tapped = true
-                    
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { 
-                        withAnimation(.easeInOut) {
-                            self.tapped = false
-                        }
-                    }
-                }
-            }
+//            .onTapGesture {
+//                withAnimation(.easeInOut) {
+//                    tapped = true
+//                    
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { 
+//                        withAnimation(.easeInOut) {
+//                            self.tapped = false
+//                        }
+//                    }
+//                }
+//            }
     }
 }
 

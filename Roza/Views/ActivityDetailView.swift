@@ -2,78 +2,76 @@
 //  ActivityDetailView.swift
 //  Roza
 //
-//  Created by Luka Vujnovac on 15.01.2022..
+//  Created by Luka Vujnovac on 20.01.2022..
 //
 
 import SwiftUI
-import CoreData
 
 struct ActivityDetailView: View {
     
     @StateObject var vm = ActivityDetailViewModel()
     
-    let colorTheme: ColorThemeProtocol = PinkColorTheme()
-    @State private var stepperValue: Double = 0
+    let colorTheme = PinkColorTheme()
+    @State private var time: Int32 = 0
+    @State private var activityName: String = ""
+    
     var body: some View {
-        
-        ZStack {
+        ZStack{
             Rectangle()
                 .ignoresSafeArea()
                 .foregroundColor(colorTheme.background)
             
             VStack(spacing: 100){
-                VStack(spacing: 30) {
-                    Text("how long did you do this activity?")
-                        .font(.system(size: 22, weight: .semibold, design: .rounded))
-                    
-                    Stepper("Enter number in hours", onIncrement: {
-                        stepperValue += 0.25
-                        
-                        
-                        
-                    }, onDecrement: {
-                        stepperValue -= 0.25
-                        
-                        if stepperValue <= 0 {
-                            stepperValue = 0
-                        }
-                    })
-                    
-                    Text("\(String(format: "%.2f", stepperValue)) h")
+                Text("Enter activity details:")
+                    .font(.system(size: 30, weight: .semibold, design: .rounded))
+                    .foregroundColor(.black)
+                
+                VStack(alignment: .leading){
+                    Text("How long did you do this activity?")
+                    Stepper("\(time) h", value: $time, in: 0...10) 
+                }
+                
+                VStack(alignment: .leading){
+                    Text("Name this activity:")
+                    TextField("New Activity", text: $activityName)
+                        .padding()
+                        .background(colorTheme.tertiary)
+                        .cornerRadius(10)
                     
                 }
                 
-                VStack{
-                    Button { 
-                        vm.addActivity(time: stepperValue)
-                        stepperValue = 0
-                    } label: { 
-                        Text("Submit")
-                            .foregroundColor(.black)
-                            .font(.system(size: 20, weight: .light, design: .rounded))
-                            .padding()
-                            .background(colorTheme.primary)
-                            .cornerRadius(10)
-                    }
+                Button { 
+                    vm.addActivity(time: time, name: activityName)
+                    activityName = ""
+                    time = 0
+                    hideKeyboard()
+                } label: { 
+                    Text("Submit")
+                        .font(.system(size: 20, weight: .light, design: .rounded))
+                        .padding()
+                        .background(colorTheme.primary)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                        .shadow(color: colorTheme.yellow, radius: 5, x: 0, y: 10)
                 }
                 
                 List{
-                    ForEach(vm.savedActivities) { entity in 
+                    ForEach(vm.savedActivities) { activity in 
                         HStack {
-                            Text(entity.name ?? "no name")
-                            Text("\(entity.time) h ")
-                        } 
+                            Text(activity.name ?? "new activity")
+                            Spacer()
+                            Text("\(activity.time)")
+                        }
                     }
-                    .onDelete { index in
-                        vm.deleteActivity(indexSet: index)
-                    }
-                }.listStyle(PlainListStyle())
+                }
+                .listStyle(.plain)
             }
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 30)
         }
-        
     }
 }
+
+
 
 struct ActivityDetailView_Previews: PreviewProvider {
     static var previews: some View {

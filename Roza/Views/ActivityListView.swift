@@ -11,6 +11,7 @@ struct ActivityListView: View {
     
     @StateObject var vm = ActivityListViewModel()
     let colorTheme: PinkColorTheme = PinkColorTheme()
+    @State private var showSheet: Bool = false
     
     var body: some View {
         ZStack{
@@ -32,6 +33,9 @@ struct ActivityListView: View {
                     tappedImageColor: colorTheme.yellow,
                     tappedImageName: "plus.circle.fill",
                     text: "Custom", systemName: true)
+                    .onTapGesture {
+                        showSheet.toggle()
+                    }
                 
                 VStack(spacing: 10){
                     HStack {
@@ -105,6 +109,9 @@ struct ActivityListView: View {
             }
             .padding(.horizontal, 20)
             .padding(.top, 50 )
+            .sheet(isPresented: $showSheet) { 
+                ActivityDetailView()
+            }
         }
     }
 }
@@ -129,4 +136,16 @@ extension View {
     }
 }
 
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button("Press to dismiss") {
+            dismiss()
+        }
+        .font(.title)
+        .padding()
+        .background(Color.black)
+    }
+}
 

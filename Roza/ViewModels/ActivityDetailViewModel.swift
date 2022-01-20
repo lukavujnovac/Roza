@@ -34,9 +34,9 @@ class ActivityDetailViewModel: ObservableObject {
         }
     }
     
-    func addActivity(time: Double) {
+    func addActivity(time: Int32, name: String) {
         let newActivity = ActivityEntity(context: container.viewContext)
-        newActivity.name = "nova aktivnost"
+        newActivity.name = name
         newActivity.time = time
         
         withAnimation(.default) {

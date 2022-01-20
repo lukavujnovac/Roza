@@ -21,6 +21,8 @@ struct ProfileView: View {
             VStack{
                 Text("Your past activities")
                 
+                
+                
             }
         }
     }
