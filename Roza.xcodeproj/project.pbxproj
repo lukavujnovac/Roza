@@ -18,6 +18,8 @@
 		5F6732AA278B7D9F0064A855 /* SecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6732A9278B7D9F0064A855 /* SecretView.swift */; };
 		5F6732AE278B882B0064A855 /* SecretViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6732AD278B882B0064A855 /* SecretViewModel.swift */; };
 		5F7A6B9E278B7586009D2DE8 /* ActivityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A6B9D278B7586009D2DE8 /* ActivityListViewModel.swift */; };
+		5F7B0FC5279AFF0000F9D894 /* SavedActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7B0FC4279AFF0000F9D894 /* SavedActivityList.swift */; };
+		5F7B0FC7279AFF3800F9D894 /* SavedActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7B0FC6279AFF3800F9D894 /* SavedActivityCell.swift */; };
 		5F7F49F9276E7BF50033ED1A /* RozaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49F8276E7BF50033ED1A /* RozaApp.swift */; };
 		5F7F49FB276E7BF50033ED1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F49FA276E7BF50033ED1A /* ContentView.swift */; };
 		5F7F49FD276E7BFD0033ED1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7F49FC276E7BFD0033ED1A /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		5F6732A9278B7D9F0064A855 /* SecretView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretView.swift; sourceTree = "<group>"; };
 		5F6732AD278B882B0064A855 /* SecretViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretViewModel.swift; sourceTree = "<group>"; };
 		5F7A6B9D278B7586009D2DE8 /* ActivityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewModel.swift; sourceTree = "<group>"; };
+		5F7B0FC4279AFF0000F9D894 /* SavedActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedActivityList.swift; sourceTree = "<group>"; };
+		5F7B0FC6279AFF3800F9D894 /* SavedActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedActivityCell.swift; sourceTree = "<group>"; };
 		5F7F49F5276E7BF50033ED1A /* Roza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7F49F8276E7BF50033ED1A /* RozaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozaApp.swift; sourceTree = "<group>"; };
 		5F7F49FA276E7BF50033ED1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,28 @@
 				5F6732AD278B882B0064A855 /* SecretViewModel.swift */,
 			);
 			path = Unused;
+			sourceTree = "<group>";
+		};
+		5F7B0FC8279AFFB400F9D894 /* ActivityViews */ = {
+			isa = PBXGroup;
+			children = (
+				5FECB5252788DB6800C16269 /* ActivityListView.swift */,
+				5FF1D5912799D0E400559EC0 /* ActivityDetailView.swift */,
+				5F7B0FC4279AFF0000F9D894 /* SavedActivityList.swift */,
+				5F7B0FC6279AFF3800F9D894 /* SavedActivityCell.swift */,
+				5FECB5342788F67100C16269 /* ActivityListItemView.swift */,
+			);
+			path = ActivityViews;
+			sourceTree = "<group>";
+		};
+		5F7B0FC9279AFFCE00F9D894 /* GoalsViews */ = {
+			isa = PBXGroup;
+			children = (
+				5F48AB822788FEBB0003024D /* GoalsView.swift */,
+				5F6475722789C21500176B03 /* GoalListView.swift */,
+				5F9638142789F88B006CA401 /* GoalCellView.swift */,
+			);
+			path = GoalsViews;
 			sourceTree = "<group>";
 		};
 		5F7F49EC276E7BF40033ED1A = {
@@ -184,12 +210,8 @@
 		5FECB5312788F62D00C16269 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5FECB5252788DB6800C16269 /* ActivityListView.swift */,
-				5FF1D5912799D0E400559EC0 /* ActivityDetailView.swift */,
-				5FECB5342788F67100C16269 /* ActivityListItemView.swift */,
-				5F48AB822788FEBB0003024D /* GoalsView.swift */,
-				5F6475722789C21500176B03 /* GoalListView.swift */,
-				5F9638142789F88B006CA401 /* GoalCellView.swift */,
+				5F7B0FC8279AFFB400F9D894 /* ActivityViews */,
+				5F7B0FC9279AFFCE00F9D894 /* GoalsViews */,
 				5F58855E279331CF0086FE1D /* ProfileView.swift */,
 			);
 			path = Views;
@@ -279,6 +301,7 @@
 				5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */,
 				5FF1D5922799D0E400559EC0 /* ActivityDetailView.swift in Sources */,
 				5F58856427933C100086FE1D /* ActivityContainer.xcdatamodeld in Sources */,
+				5F7B0FC7279AFF3800F9D894 /* SavedActivityCell.swift in Sources */,
 				5F6732A8278B7C490064A855 /* BlueColorTheme.swift in Sources */,
 				5F6475732789C21600176B03 /* GoalListView.swift in Sources */,
 				5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */,
@@ -288,6 +311,7 @@
 				5F58855F279331CF0086FE1D /* ProfileView.swift in Sources */,
 				5F96381B2789F94D006CA401 /* GoalListViewModel.swift in Sources */,
 				5FECB5352788F67100C16269 /* ActivityListItemView.swift in Sources */,
+				5F7B0FC5279AFF0000F9D894 /* SavedActivityList.swift in Sources */,
 				5FECB5292788E8C800C16269 /* ActivityModel.swift in Sources */,
 				5F48AB85278901C70003024D /* YellowColorTheme.swift in Sources */,
 				5FECB5262788DB6800C16269 /* ActivityListView.swift in Sources */,

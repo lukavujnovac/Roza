@@ -60,7 +60,7 @@ struct ActivityDetailView: View {
                     }
                     
                     NavigationLink { 
-                        SavedActivityList()
+                        SavedActivityListView()
                     } label: { 
                         Text("Show past activies")
                             .font(.system(size: 20, weight: .semibold, design: .rounded))
@@ -84,56 +84,4 @@ struct ActivityDetailView_Previews: PreviewProvider {
     }
 }
 
-struct SavedActivityCell: View {
-    
-    let colorTheme = PinkColorTheme()
-    let activity: ActivityEntity
-    
-    var body: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .frame(maxWidth: .infinity, maxHeight: 80)
-            .listRowBackground(Color.clear)
-            .listRowSeparator(.hidden)
-            .foregroundColor(Color("babyBlue"))
-            .shadow(color:colorTheme.primary.opacity(0.5) , radius: 5, x: 0, y: 6)
-            .overlay(
-                HStack{
-                    Text(activity.name ?? "nova aktivnost")
-                    Spacer()
-                    Text("\(activity.time) h")
-                }
-                    .foregroundColor(Color("primaryColor"))
-                    .padding()
-            )
-        
-    }
-}
 
-struct SavedActivityList: View {
-    
-    let colorTheme = PinkColorTheme()
-    @StateObject var vm = ActivityDetailViewModel()
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .ignoresSafeArea()
-                .foregroundColor(colorTheme.background)
-            
-            VStack(alignment: .leading) {
-                Text("Your past activities:")
-                    .padding(.leading, 30)
-                List{
-                    ForEach(vm.savedActivities) { activity in 
-                        SavedActivityCell(activity: activity)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 100)
-                    }
-                    .onDelete { index in
-                        vm.deleteActivity(indexSet: index)
-                    }
-                }
-                .listStyle(.plain) 
-            }
-        }
-    }
-}
