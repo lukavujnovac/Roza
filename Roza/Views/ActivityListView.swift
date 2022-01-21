@@ -54,7 +54,11 @@ struct ActivityListView: View {
                                     tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: false)
+                                    .onTapGesture {
+                                        showSheet.toggle()
+                                    }
                             }
+                            
                         }
                         
                         VStack(spacing: 10){
@@ -66,6 +70,9 @@ struct ActivityListView: View {
                                     tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: false)
+                                    .onTapGesture {
+                                        showSheet.toggle()
+                                    }
                             }
                         }
                     }
@@ -88,6 +95,9 @@ struct ActivityListView: View {
                                     tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: true)
+                                    .onTapGesture {
+                                        showSheet.toggle()
+                                    }
                             }
                         }
                         
@@ -100,6 +110,9 @@ struct ActivityListView: View {
                                     tappedImageColor: .yellow,
                                     tappedImageName: activity.tappedImageName,
                                     text: activity.name, systemName: true)
+                                    .onTapGesture {
+                                        showSheet.toggle()
+                                    }
                             }
                         }
                     }

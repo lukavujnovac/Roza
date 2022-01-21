@@ -19,10 +19,7 @@ struct ProfileView: View {
                 .foregroundColor(colorTheme.background)
             
             VStack{
-                Text("Your past activities")
-                
-                
-                
+                Text("Your profile")
             }
         }
     }
