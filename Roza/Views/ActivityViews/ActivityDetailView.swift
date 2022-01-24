@@ -46,8 +46,8 @@ struct ActivityDetailView: View {
                     
                     Button { 
                         vm.addActivity(time: time, name: activityName)
-                        activityName = ""
                         time = 0
+                        activityName = ""
                         hideKeyboard()
                     } label: { 
                         Text("Submit")
@@ -74,9 +74,6 @@ struct ActivityDetailView: View {
         }
     }
 }
-
-
-
 
 struct ActivityDetailView_Previews: PreviewProvider {
     static var previews: some View {

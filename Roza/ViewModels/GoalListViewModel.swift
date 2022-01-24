@@ -14,6 +14,7 @@ class GoalListViewModel: ObservableObject {
     
     let container: NSPersistentContainer
     @Published var savedEntities: [GoalEntity] = []
+    @Published var completedEntites: [GoalEntity] = []
     
     init() {
         container = NSPersistentContainer(name: "GoalContainer")
@@ -57,6 +58,10 @@ class GoalListViewModel: ObservableObject {
     
     func updateGoal(entity: GoalEntity) {
         entity.completed.toggle()
+        
+        if entity.completed {
+            savedEntities.append(entity)
+        }
         saveData()
     }
     

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GoalsView: View {
     
+    @StateObject var listVM = GoalListViewModel()
+    
     @State private var rating: Int = 0
     let colorTheme: ColorThemeProtocol = YellowColorTheme()
     @State private var goalCompleted: Bool = false
