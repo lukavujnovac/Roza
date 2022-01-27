@@ -27,8 +27,8 @@ class NotificationManager {
     func scheduleNotifications() {
         
         let content = UNMutableNotificationContent()
-        content.title = "Tein Momak"
-        content.subtitle = "Laku noc ljubavi"
+        content.title = "Roza"
+        content.subtitle = "Record Your activities for today"
         content.sound = .default
         content.badge = 1
         
