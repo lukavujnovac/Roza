@@ -43,6 +43,7 @@ struct ActivityListItemView: View {
                     }
                     
                     Text(text)
+                        .foregroundColor(.black)
                         .font(.system(size: 16, weight: .light, design: .rounded))
                 }
             )

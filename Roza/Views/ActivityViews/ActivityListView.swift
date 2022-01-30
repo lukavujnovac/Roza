@@ -33,9 +33,9 @@ struct ActivityListView: View {
                     tappedImageColor: colorTheme.yellow,
                     tappedImageName: "plus.circle.fill",
                     text: "Custom", systemName: true)
-                    .onTapGesture {
-                        showSheet.toggle()
-                    }
+                        .onTapGesture {
+                            showSheet.toggle()
+                        }
                 
                 VStack(spacing: 10){
                     HStack {
@@ -47,32 +47,37 @@ struct ActivityListView: View {
                     HStack(spacing: 10) {
                         VStack(spacing: 10){
                             ForEach(vm.dataService.fitnessActivities1, id: \.self) {activity in 
-                                ActivityListItemView(
-                                    foregroundColor: colorTheme.secondary,
-                                    imageName: activity.imageName,
-                                    imageColor: colorTheme.yellow, 
-                                    tappedImageColor: .yellow,
-                                    tappedImageName: activity.tappedImageName,
-                                    text: activity.name, systemName: false)
-                                    .onTapGesture {
-                                        showSheet.toggle()
-                                    }
+                                NavigationLink { 
+                                    ActivityDetailView(activity: activity)
+                                } label: { 
+                                    ActivityListItemView(
+                                        foregroundColor: colorTheme.secondary,
+                                        imageName: activity.imageName,
+                                        imageColor: colorTheme.yellow, 
+                                        tappedImageColor: .yellow,
+                                        tappedImageName: activity.tappedImageName,
+                                        text: activity.name, systemName: false)
+//                                        .onTapGesture {
+//                                            showSheet.toggle()
+//                                        }
+                                }
                             }
                             
                         }
                         
                         VStack(spacing: 10){
                             ForEach(vm.dataService.fitnessActivities2, id: \.self) {activity in 
-                                ActivityListItemView(
-                                    foregroundColor: colorTheme.secondary,
-                                    imageName: activity.imageName,
-                                    imageColor: colorTheme.yellow, 
-                                    tappedImageColor: .yellow,
-                                    tappedImageName: activity.tappedImageName,
-                                    text: activity.name, systemName: false)
-                                    .onTapGesture {
-                                        showSheet.toggle()
-                                    }
+                                NavigationLink { 
+                                    ActivityDetailView(activity: activity)
+                                } label: { 
+                                    ActivityListItemView(
+                                        foregroundColor: colorTheme.secondary,
+                                        imageName: activity.imageName,
+                                        imageColor: colorTheme.yellow, 
+                                        tappedImageColor: .yellow,
+                                        tappedImageName: activity.tappedImageName,
+                                        text: activity.name, systemName: false)
+                                }
                             }
                         }
                     }
@@ -88,31 +93,33 @@ struct ActivityListView: View {
                     HStack(spacing: 10) {
                         VStack(spacing: 10){
                             ForEach(vm.dataService.learnActivities1, id: \.self) {activity in 
-                                ActivityListItemView(
-                                    foregroundColor: colorTheme.secondary,
-                                    imageName: activity.imageName,
-                                    imageColor: colorTheme.yellow, 
-                                    tappedImageColor: .yellow,
-                                    tappedImageName: activity.tappedImageName,
-                                    text: activity.name, systemName: true)
-                                    .onTapGesture {
-                                        showSheet.toggle()
-                                    }
+                                NavigationLink { 
+                                    ActivityDetailView(activity: activity)
+                                } label: { 
+                                    ActivityListItemView(
+                                        foregroundColor: colorTheme.secondary,
+                                        imageName: activity.imageName,
+                                        imageColor: colorTheme.yellow, 
+                                        tappedImageColor: .yellow,
+                                        tappedImageName: activity.tappedImageName,
+                                        text: activity.name, systemName: true)
+                                }
                             }
                         }
                         
                         VStack(spacing: 10){
                             ForEach(vm.dataService.learnActivities2, id: \.self) {activity in 
-                                ActivityListItemView(
-                                    foregroundColor: colorTheme.secondary,
-                                    imageName: activity.imageName,
-                                    imageColor: colorTheme.yellow, 
-                                    tappedImageColor: .yellow,
-                                    tappedImageName: activity.tappedImageName,
-                                    text: activity.name, systemName: true)
-                                    .onTapGesture {
-                                        showSheet.toggle()
-                                    }
+                                NavigationLink { 
+                                    ActivityDetailView(activity: activity)
+                                } label: { 
+                                    ActivityListItemView(
+                                        foregroundColor: colorTheme.secondary,
+                                        imageName: activity.imageName,
+                                        imageColor: colorTheme.yellow, 
+                                        tappedImageColor: .yellow,
+                                        tappedImageName: activity.tappedImageName,
+                                        text: activity.name, systemName: true)
+                                }
                             }
                         }
                     }
@@ -123,7 +130,7 @@ struct ActivityListView: View {
             .padding(.horizontal, 20)
             .padding(.top, 50 )
             .sheet(isPresented: $showSheet) { 
-                ActivityDetailView()
+                ActivityDetailView(activity: nil)
             }
         }
     }

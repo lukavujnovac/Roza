@@ -83,6 +83,7 @@ extension CustomTabBarView {
         .foregroundColor(localSelection == tab ? tab.color : Color.gray)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
+        .frame(height: 55)
         .background(
             ZStack{
                 if localSelection == tab {

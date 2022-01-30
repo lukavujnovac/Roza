@@ -15,7 +15,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             CustomTabBarContainerView(selection: $tabSelection) { 
-                
                 ActivityListView()
                     .tabBarItem(tab: .home, selection: $tabSelection)
                 
