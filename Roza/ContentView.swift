@@ -21,8 +21,11 @@ struct ContentView: View {
                 GoalsView()
                     .tabBarItem(tab: .goals, selection: $tabSelection)
                 
+                Color.red
+                    .tabBarItem(tab: .calendar, selection: $tabSelection)
+                
                 ProfileView()
-                    .tabBarItem(tab: .profile, selection: $tabSelection)
+                    .tabBarItem(tab: .profile, selection: $tabSelection)  
             }
         }
     }
