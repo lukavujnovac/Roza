@@ -69,7 +69,7 @@ enum TabBarItem: Hashable {
             case .home: return Color("primaryColor")
             case .goals: return Color("yellow")
             case .profile: return Color("blue")
-            case .calendar: return .red
+            case .calendar: return Color("darkRed")
         }
     }
 }

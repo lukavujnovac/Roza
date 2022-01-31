@@ -28,6 +28,8 @@
 		5F7F4A0A276E7F130033ED1A /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A09276E7F130033ED1A /* CustomTabBarView.swift */; };
 		5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7F4A0B276E80940033ED1A /* TabBarItemsPreferenceKeys.swift */; };
 		5F86547027A6DEF700AEF520 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86546F27A6DEF700AEF520 /* NotificationManager.swift */; };
+		5F88A29D27A862DD006E0B78 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F88A29C27A862DD006E0B78 /* CalendarView.swift */; };
+		5F88A29F27A863C7006E0B78 /* RedColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F88A29E27A863C7006E0B78 /* RedColorTheme.swift */; };
 		5F9638132789F812006CA401 /* GoalCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9638122789F812006CA401 /* GoalCellViewModel.swift */; };
 		5F9638152789F88B006CA401 /* GoalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9638142789F88B006CA401 /* GoalCellView.swift */; };
 		5F96381B2789F94D006CA401 /* GoalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96381A2789F94D006CA401 /* GoalListViewModel.swift */; };
@@ -39,16 +41,6 @@
 		5FECB5352788F67100C16269 /* ActivityListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECB5342788F67100C16269 /* ActivityListItemView.swift */; };
 		5FF1D5922799D0E400559EC0 /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF1D5912799D0E400559EC0 /* ActivityDetailView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5F86547927A6E06900AEF520 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F7F49ED276E7BF40033ED1A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F7F49F4276E7BF50033ED1A;
-			remoteInfo = Roza;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5F191514278A2941000AB93D /* GoalContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalContainer.xcdatamodel; sourceTree = "<group>"; };
@@ -73,7 +65,8 @@
 		5F7F4A09276E7F130033ED1A /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		5F7F4A0B276E80940033ED1A /* TabBarItemsPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKeys.swift; sourceTree = "<group>"; };
 		5F86546F27A6DEF700AEF520 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		5F86547527A6E06900AEF520 /* Roza_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Roza_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F88A29C27A862DD006E0B78 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		5F88A29E27A863C7006E0B78 /* RedColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedColorTheme.swift; sourceTree = "<group>"; };
 		5F9638122789F812006CA401 /* GoalCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellViewModel.swift; sourceTree = "<group>"; };
 		5F9638142789F88B006CA401 /* GoalCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellView.swift; sourceTree = "<group>"; };
 		5F96381A2789F94D006CA401 /* GoalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewModel.swift; sourceTree = "<group>"; };
@@ -88,13 +81,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		5F7F49F2276E7BF50033ED1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F86547227A6E06900AEF520 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -147,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				5F7F49F5276E7BF50033ED1A /* Roza.app */,
-				5F86547527A6E06900AEF520 /* Roza_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +182,14 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		5F88A29927A862BD006E0B78 /* CalendarViews */ = {
+			isa = PBXGroup;
+			children = (
+				5F88A29C27A862DD006E0B78 /* CalendarView.swift */,
+			);
+			name = CalendarViews;
+			sourceTree = "<group>";
+		};
 		5F9638182789F922006CA401 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +226,7 @@
 				5FECB52F2788F61200C16269 /* PinkColorTheme.swift */,
 				5F48AB84278901C70003024D /* YellowColorTheme.swift */,
 				5F6732A7278B7C490064A855 /* BlueColorTheme.swift */,
+				5F88A29E27A863C7006E0B78 /* RedColorTheme.swift */,
 			);
 			path = ColorThemes;
 			sourceTree = "<group>";
@@ -243,6 +237,7 @@
 				5F7B0FC8279AFFB400F9D894 /* ActivityViews */,
 				5F7B0FC9279AFFCE00F9D894 /* GoalsViews */,
 				5F58855E279331CF0086FE1D /* ProfileView.swift */,
+				5F88A29927A862BD006E0B78 /* CalendarViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,24 +262,6 @@
 			productReference = 5F7F49F5276E7BF50033ED1A /* Roza.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F86547427A6E06900AEF520 /* Roza_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F86547B27A6E06900AEF520 /* Build configuration list for PBXNativeTarget "Roza_Tests" */;
-			buildPhases = (
-				5F86547127A6E06900AEF520 /* Sources */,
-				5F86547227A6E06900AEF520 /* Frameworks */,
-				5F86547327A6E06900AEF520 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F86547A27A6E06900AEF520 /* PBXTargetDependency */,
-			);
-			name = Roza_Tests;
-			productName = Roza_Tests;
-			productReference = 5F86547527A6E06900AEF520 /* Roza_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,10 +274,6 @@
 				TargetAttributes = {
 					5F7F49F4276E7BF50033ED1A = {
 						CreatedOnToolsVersion = 13.2;
-					};
-					5F86547427A6E06900AEF520 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 5F7F49F4276E7BF50033ED1A;
 					};
 				};
 			};
@@ -318,7 +291,6 @@
 			projectRoot = "";
 			targets = (
 				5F7F49F4276E7BF50033ED1A /* Roza */,
-				5F86547427A6E06900AEF520 /* Roza_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,13 +302,6 @@
 			files = (
 				5F7F4A00276E7BFD0033ED1A /* Preview Assets.xcassets in Resources */,
 				5F7F49FD276E7BFD0033ED1A /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F86547327A6E06900AEF520 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +331,9 @@
 				5F6475732789C21600176B03 /* GoalListView.swift in Sources */,
 				5F7F4A0C276E80940033ED1A /* TabBarItemsPreferenceKeys.swift in Sources */,
 				5FECB52B2788ECE900C16269 /* MockData.swift in Sources */,
+				5F88A29F27A863C7006E0B78 /* RedColorTheme.swift in Sources */,
 				5FECB5302788F61200C16269 /* PinkColorTheme.swift in Sources */,
+				5F88A29D27A862DD006E0B78 /* CalendarView.swift in Sources */,
 				5F9638152789F88B006CA401 /* GoalCellView.swift in Sources */,
 				5F58855F279331CF0086FE1D /* ProfileView.swift in Sources */,
 				5F96381B2789F94D006CA401 /* GoalListViewModel.swift in Sources */,
@@ -379,22 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F86547127A6E06900AEF520 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5F86547A27A6E06900AEF520 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5F7F49F4276E7BF50033ED1A /* Roza */;
-			targetProxy = 5F86547927A6E06900AEF520 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5F7F4A01276E7BFD0033ED1A /* Debug */ = {
@@ -571,44 +523,6 @@
 			};
 			name = Release;
 		};
-		5F86547C27A6E06900AEF520 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3JU6T27Y3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lukinafirmetina.Roza-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roza.app/Roza";
-			};
-			name = Debug;
-		};
-		5F86547D27A6E06900AEF520 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3JU6T27Y3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lukinafirmetina.Roza-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roza.app/Roza";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -626,15 +540,6 @@
 			buildConfigurations = (
 				5F7F4A04276E7BFD0033ED1A /* Debug */,
 				5F7F4A05276E7BFD0033ED1A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5F86547B27A6E06900AEF520 /* Build configuration list for PBXNativeTarget "Roza_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F86547C27A6E06900AEF520 /* Debug */,
-				5F86547D27A6E06900AEF520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

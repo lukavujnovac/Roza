@@ -17,7 +17,7 @@ struct ActivityListView: View {
         ZStack{
             Rectangle()
                 .ignoresSafeArea()
-                .foregroundColor(Color("backgroundColor"))
+                .foregroundColor(Color("primaryColor").opacity(0.1))
             VStack(spacing: 40) {
                 
                 Image(systemName: "crown.fill")

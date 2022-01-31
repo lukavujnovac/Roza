@@ -17,7 +17,7 @@ struct ProfileView: View {
         ZStack {
             Rectangle()
                 .ignoresSafeArea()
-                .foregroundColor(colorTheme.background)
+                .foregroundColor(colorTheme.primary.opacity(0.1))
             
             VStack {
                 HStack {

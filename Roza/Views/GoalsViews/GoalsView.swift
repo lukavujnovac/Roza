@@ -19,7 +19,7 @@ struct GoalsView: View {
             ZStack{
                 Rectangle()
                     .ignoresSafeArea()
-                    .foregroundColor(colorTheme.background)
+                    .foregroundColor(colorTheme.primary.opacity(0.1))
                 
                 VStack(spacing: 40) {
                     VStack(spacing: 10) {
